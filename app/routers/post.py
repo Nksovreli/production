@@ -15,6 +15,10 @@ router = APIRouter(
 )
 
 
+@router.get('/')
+def home():
+    return {"msg":"hello"}
+
 @router.get('/',response_model = List[schemas.Post])
 def get_posts(db: Session = Depends(get_db)):
    
