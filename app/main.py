@@ -67,9 +67,7 @@ app.include_router(user.router)
 
 
 
-@app.get('/')
-def root():
-    return {'message':'Hellow'}
+
 
 
 
